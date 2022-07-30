@@ -13,7 +13,7 @@ env:
 
 jobs:
 
-  Build:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -41,6 +41,6 @@ jobs:
     - name: Install Requirements
       run: pip install -r requirements.txt
       
-  Tests:
+  test:
     - name: Run Tests
       run: brownie test
