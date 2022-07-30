@@ -13,7 +13,9 @@ env:
 
 jobs:
   Build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest+
+    environment:
+      name: production_environment
 
     steps:
     - uses: actions/checkout@v2
@@ -38,7 +40,13 @@ jobs:
         python-version: 3.8
 
     - name: Install Requirements
-      run: pip install -r requirements.txt     
-
+      run: pip install -r requirements.txt
+      
+  Tests:
+    runs-on: ubuntu-latest
+    environment:
+      name: production_environment
+    needs: Build
+    steps:
     - name: Run Tests
       run: brownie test -s
