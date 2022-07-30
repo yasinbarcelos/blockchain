@@ -4,7 +4,7 @@ name: main workflow
 
 env:
   # ETHERSCAN_TOKEN:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN }}
   # WEB3_INFURA_PROJECT_ID:
 
   # increasing available memory for node reduces issues with ganache crashing
@@ -14,9 +14,6 @@ env:
 jobs:
   Build:
     runs-on: ubuntu-latest+
-    environment:
-      name: production_environment
-
     steps:
     - uses: actions/checkout@v2
 
@@ -41,12 +38,6 @@ jobs:
 
     - name: Install Requirements
       run: pip install -r requirements.txt
-      
-  Tests:
-    runs-on: ubuntu-latest
-    environment:
-      name: production_environment
-    needs: Build
-    steps:
+
     - name: Run Tests
       run: brownie test -s
