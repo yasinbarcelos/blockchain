@@ -2,6 +2,7 @@
 
 > NOTE: This has been recently updated for better compatibility with local blockchains. Check out the scripts to learn more.
 
+![example workflow](https://github.com/yasinbarcelos/blockchain/actions/workflows/brownie-test.yml/badge.svg)
 
 <br/>
 <p align="center">
