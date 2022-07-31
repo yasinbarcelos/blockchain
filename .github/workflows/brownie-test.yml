@@ -13,7 +13,7 @@ env:
 
 jobs:
   Build:
-    runs-on: ubuntu-latest+
+    runs-on: ubuntu-18.04
     environment:
       name: Build
     
@@ -42,7 +42,7 @@ jobs:
     - name: Install Requirements
       run: pip install -r requirements.txt
   Tests:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     needs: Build
     environment:
       name: Build
