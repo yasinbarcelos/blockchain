@@ -14,9 +14,7 @@ env:
 jobs:
   Build:
     runs-on: ubuntu-18.04
-    environment:
-      name: Build
-    
+    environment: Build   
     steps:
     - uses: actions/checkout@v2
 
@@ -44,8 +42,7 @@ jobs:
   Tests:
     runs-on: ubuntu-18.04
     needs: Build
-    environment:
-      name: Build
+    environment: Build
     steps:
     - name: Run Tests
       run: brownie test -s
