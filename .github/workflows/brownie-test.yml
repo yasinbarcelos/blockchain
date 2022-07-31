@@ -39,10 +39,6 @@ jobs:
 
     - name: Install Requirements
       run: pip install -r requirements.txt
-  Tests:
-    runs-on: [self-hosted , ubuntu-18.04 ]
-    needs: Build
-    environment: Build
-    steps:
+
     - name: Run Tests
       run: brownie test -s
