@@ -14,7 +14,6 @@ env:
 jobs:
   Build:
     runs-on: [self-hosted , ubuntu-18.04 ]
-    environment: Build   
     steps:
     - uses: actions/checkout@v2
 
