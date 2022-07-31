@@ -13,7 +13,7 @@ env:
 
 jobs:
   Build:
-    runs-on: ubuntu-18.04
+    runs-on: [self-hosted , ubuntu-18.04 ]
     environment: Build   
     steps:
     - uses: actions/checkout@v2
@@ -40,7 +40,7 @@ jobs:
     - name: Install Requirements
       run: pip install -r requirements.txt
   Tests:
-    runs-on: ubuntu-18.04
+    runs-on: [self-hosted , ubuntu-18.04 ]
     needs: Build
     environment: Build
     steps:
