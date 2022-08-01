@@ -4,5 +4,5 @@ from scripts.helpful_scripts import get_account
 
 @pytest.fixture
 def token(ALDToken):
-    ALD = ALDToken.deploy({"from": get_account(index=0)})    
+    ALD = ALDToken.deploy({"from": accounts[0]})    
     return ALD
