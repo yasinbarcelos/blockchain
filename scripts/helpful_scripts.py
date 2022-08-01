@@ -12,11 +12,8 @@ from brownie import (
 import time
 
 NON_FORKED_LOCAL_BLOCKCHAIN_ENVIRONMENTS = ["hardhat", "development", "ganache"]
-LOCAL_BLOCKCHAIN_ENVIRONMENTS = NON_FORKED_LOCAL_BLOCKCHAIN_ENVIRONMENTS + [
-    "mainnet-fork",
-    "binance-fork",
-    "matic-fork",
-]
+LOCAL_BLOCKCHAIN_ENVIRONMENTS = NON_FORKED_LOCAL_BLOCKCHAIN_ENVIRONMENTS + ["mainnet-fork","binance-fork","matic-fork"]
+
 # Etherscan usually takes a few blocks to register the contract has been deployed
 BLOCK_CONFIRMATIONS_FOR_VERIFICATION = 6
 
@@ -29,7 +26,6 @@ contract_to_mock = {
 
 DECIMALS = 18
 INITIAL_VALUE = web3.toWei(2000, "ether")
-
 
 def get_account(index=None, id=None):
     if index:

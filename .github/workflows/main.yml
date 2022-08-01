@@ -1,6 +1,6 @@
 on: ["push", "pull_request"]
 
-name: main workflow
+name: Build and Tests
 
 env:
   # ETHERSCAN_TOKEN:
@@ -13,7 +13,7 @@ env:
 
 jobs:
   Build:
-    runs-on: [self-hosted , ubuntu-18.04 ]
+    runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
 

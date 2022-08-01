@@ -1,25 +1,10 @@
 # Legacy of Allard
 
-> NOTE: This has been recently updated for better compatibility with local blockchains. Check out the scripts to learn more.
-
-![example workflow](https://github.com/yasinbarcelos/blockchain/actions/workflows/brownie-test.yml/badge.svg)
-
-<br/>
-<p align="center">
-<a href="https://chain.link" target="_blank">
-<img src="./img/chainlink-brownie.png" width="225" alt="Chainlink Brownie logo">
-</a>
-</p>
-<br/>
-
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/smartcontractkit/chainlink-mix.svg)](http://isitmaintained.com/project/smartcontractkit/chainlink-mix "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/smartcontractkit/chainlink-mix.svg)](http://isitmaintained.com/project/smartcontractkit/chainlink-mix "Percentage of issues still open")
-
-This is a repo to work with and use Chainlink smart contracts in a python environment. If you're brand new to Chainlink, check out the beginner walk-through in remix to [learn the basics.](https://docs.chain.link/docs/beginners-tutorial)
+![example workflow](https://github.com/Legacy-of-Allard/blockchain/actions/workflows/main.yml/badge.svg)
 
 You can also check out the more advanced Chainlink tutorials there as well.
 
-- [chainlink-mix](#chainlink-mix)
+- [Chainlink-Mix](#chainlink-mix)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Testnet Development](#testnet-development)
@@ -99,9 +84,6 @@ AND THEN RUN `source .env` TO ACTIVATE THE ENV VARIABLES
 
 ![WARNING](https://via.placeholder.com/15/f03c15/000000?text=+) **WARNING** ![WARNING](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-DO NOT SEND YOUR PRIVATE KEY WITH FUNDS IN IT ONTO GITHUB
-
-Otherwise, you can build, test, and deploy on your local environment.
 
 ## Local Development
 
@@ -247,18 +229,8 @@ If you're using [vscode](https://code.visualstudio.com/) and the [solidity exten
 This will quiet the linting errors it gives you. 
 
 ## Resources
-
 To get started with Brownie:
 
-* [Chainlink Documentation](https://docs.chain.link/docs)
-* Check out the [Chainlink documentation](https://docs.chain.link/docs) to get started from any level of smart contract engineering.
-* Check out the other [Brownie mixes](https://github.com/brownie-mix/) that can be used as a starting point for your own contracts. They also provide example code to help you get started.
-* ["Getting Started with Brownie"](https://medium.com/@iamdefinitelyahuman/getting-started-with-brownie-part-1-9b2181f4cb99) is a good tutorial to help you familiarize yourself with Brownie.
-* For more in-depth information, read the [Brownie documentation](https://eth-brownie.readthedocs.io/en/stable/).
-
-
-Any questions? Join our [Discord](https://discord.gg/2YHSAey)
-
-## License
-
-This project is licensed under the [MIT license](LICENSE).
+* [Brownie documentation](https://eth-brownie.readthedocs.io/en/stable/).
+* [Chainlink Documentation](https://docs.chain.link/docs).
+* [Brownie mixes](https://github.com/brownie-mix/).
