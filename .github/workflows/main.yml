@@ -4,10 +4,7 @@ name: Build and Tests
 
 env:
   # ETHERSCAN_TOKEN:
-  WEB3_INFURA_PROJECT_ID: ${{env.WEB3_INFURA_PROJECT_ID}}
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN }}
-  PRIVATE_KEY: ${{env.PRIVATE_KEY}}  
-  MNEMONIC: ${{env.MNEMONIC}}  
 
   # increasing available memory for node reduces issues with ganache crashing
   # https://nodejs.org/api/cli.html#cli_max_old_space_size_size_in_megabytes
