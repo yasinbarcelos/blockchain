@@ -1,9 +1,8 @@
 import pytest
-from brownie import LoAToken
-from scripts.helpful_scripts import get_account
+from brownie import LoAToken , accounts
 
 @pytest.fixture
 def token(LoAToken):
-    LoA = LoAToken.deploy({"from": accounts[0])})    
+    LoA = LoAToken.deploy({"from": accounts[0]})    
     return LoA
 
